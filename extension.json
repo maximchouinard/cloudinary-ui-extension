@@ -1,24 +1,20 @@
 {
-  "id": "cloudinary",
-  "name": "Upload image to Cloudinary",
+  "name": "Cloudinary Upload",
+  "id": "contentful-ui-cloudinary",
+  "fieldTypes": ["Object"],
   "srcdoc": "./index.html",
-  "sidebar": true,
-  "fieldTypes": [
-    "Object",
-    "Asset"
-  ],
   "parameters": {
     "instance": [
       {
         "id": "cloud_name",
-        "type": "Text",
-        "name": "Cloud name in Cloudinary",
+        "name": "Cloud name for Cloudinary",
+        "type": "Symbol",
         "required": true
       },
       {
         "id": "preset",
-        "type": "Text",
-        "name": "Preset name in Cloudinary",
+        "name": "Preset for Cloudinary",
+        "type": "Symbol",
         "required": true
       }
     ]
