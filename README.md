@@ -33,4 +33,4 @@ The [same constraints](../README.md#debugging-on-your-local-environment) apply t
 
 Enable the extension in the Contentful web app for a "JSON Object" field by opening the _Settings_ for a field and selecting the widget in the _appearance_ tab.
 
-Fill fields for _Cloud name_ and _preset_ (this should be).
+Fill fields for _Cloud name_ and _preset_.
