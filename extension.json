@@ -3,6 +3,7 @@
   "id": "contentful-ui-cloudinary",
   "fieldTypes": ["Object"],
   "srcdoc": "./index.html",
+  "sidebar": true,
   "parameters": {
     "instance": [
       {
