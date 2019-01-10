@@ -27,7 +27,7 @@ Don't use the `extension.json` descriptor file but instead use 3rd party hosting
 contentful extension update --force --src 'http://localhost:3030/index.html' --id cloudinary --name cloudinary --field-types Object -field-types Asset
 ```
 
-The [same constraints](../README.md#debugging-on-your-local-environment) apply to loading unsafe scripts.
+The [same constraints](https://github.com/contentful/extensions/blob/master/samples/README.md#debugging-on-your-local-environment) apply to loading unsafe scripts.
 
 ## Using the extension in the Contentful web app
 
