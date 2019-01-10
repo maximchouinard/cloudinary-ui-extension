@@ -17,7 +17,7 @@ python -m SimpleHTTPServer 3030
 Don't use the `extension.json` descriptor file but instead use 3rd party hosting from `localhost`
 
 ```bash
-contentful extension update --force --src 'http://localhost:3030/index.html' --id diff --name diff --field-types Object -field-types Asset
+contentful extension update --force --src 'http://localhost:3030/index.html' --id cloudinary --name cloudinary --field-types Object -field-types Asset
 ```
 
 The [same constraints](../README.md#debugging-on-your-local-environment) apply to loading unsafe scripts.
