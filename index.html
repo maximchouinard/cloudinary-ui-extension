@@ -19,7 +19,7 @@
         'use strict';
 
         window.contentfulExtension.init(extension => {
-            extension.window.startAutoResizer()
+            extension.window.startAutoResizer();
             const cloudName = extension.parameters.instance.cloud_name;
             const unsignedUploadPreset = extension.parameters.instance.preset;
             const selectBtn = document.getElementById('selectBtn');
@@ -28,7 +28,7 @@
             selectBtn.addEventListener("click", () => {
                 let fileElem = document.getElementById('fileElem');
                 fileElem.addEventListener('change', () => {
-                    handleFiles(fileElem.files)
+                    handleFiles(fileElem.files);
                 })
 
                 fileElem.click();
@@ -59,12 +59,11 @@
 
                 xhr.onreadystatechange = function (e) {
                     if (xhr.readyState == 4 && xhr.status == 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        const urlField = extension.entry.fields.url;
+                        urlField.setValue(response.secure_url);
                         uploadStatus.style.color = 'green';
                         uploadStatus.innerHTML = 'Upload Successful';
-                        var response = JSON.parse(xhr.responseText);
-                        var url = response.secure_url;
-                        const urlField = extension.entry.fields.url;
-                        urlField.setValue(url)
                     }
                     else {
                         uploadStatus.style.color = 'red';
