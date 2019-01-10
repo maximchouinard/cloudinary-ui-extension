@@ -1,0 +1,7 @@
+{
+    "id": "cloudinary",
+    "name": "Upload image to Cloudinary",
+    "srcdoc": "index.html",
+    "sidebar": true,
+    "fieldTypes": ["Object", "Asset"]
+  }
