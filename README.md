@@ -1,4 +1,4 @@
-# Cloudinary UI Extensions
+# Cloudinary UI Extension
 
 Uploader for images to [Cloudinary](https://cloudinary.com). 
 
