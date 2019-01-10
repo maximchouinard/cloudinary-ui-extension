@@ -3,5 +3,21 @@
     "name": "Upload image to Cloudinary",
     "srcdoc": "index.html",
     "sidebar": true,
-    "fieldTypes": ["Object", "Asset"]
+    "fieldTypes": ["Object", "Asset"],
+    "parameters": {
+      "installation": [
+        {
+          "id": "cloud_name",
+          "type": "Text",
+          "name": "Cloud name in Cloudinary",
+          "required": true
+        },
+        {
+          "id": "preset",
+          "type": "Text",
+          "name": "Preset name in Cloudinary",
+          "required": true
+        }
+      ]
+    }
   }
