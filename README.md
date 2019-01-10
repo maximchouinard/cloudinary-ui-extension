@@ -4,7 +4,7 @@ Uploader for images to [Cloudinary](https://cloudinary.com).
 
 ## Installation and usage
 
-Check you have the [requirements](../README.md#requirements) needed to use extensions.
+Check you have the [requirements](https://github.com/contentful/extensions/blob/master/samples/README.md#requirements) needed to use extensions.
 
 You must have:
  * Cloud name
