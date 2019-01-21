@@ -34,7 +34,7 @@
             });
 
             function handleFiles(files) {
-                for (var i = 0; i < files.length; i++) {
+                for (let i = 0; i < files.length; i++) {
                     uploadFile(files[i]);
                 }
             };
@@ -58,7 +58,7 @@
 
                 xhr.onreadystatechange = function (e) {
                     if (xhr.readyState == 4 && xhr.status == 200) {
-                        var response = JSON.parse(xhr.responseText);
+                        let response = JSON.parse(xhr.responseText);
                         const urlField = extension.entry.fields.url;
                         urlField.setValue(response.secure_url);
                         uploadStatus.style.color = 'green';
