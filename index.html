@@ -57,17 +57,21 @@
                 });
 
                 xhr.onreadystatechange = function (e) {
-                    if (xhr.readyState == 4 && xhr.status == 200) {
+                    if (xhr.readyState == 4 && xhr.status == 200 && extension.entry.fields.url) {
                         let response = JSON.parse(xhr.responseText);
                         const urlField = extension.entry.fields.url;
                         urlField.setValue(response.secure_url);
                         uploadStatus.style.color = 'green';
                         uploadStatus.innerHTML = 'Upload Successful';
                         fileElem.value = '';
-                    }
-                    else {
+                    } else {
                         uploadStatus.style.color = 'red';
-                        uploadStatus.innerHTML = 'Upload Failed';
+
+                        if(extension.entry.fields.url) {
+                            uploadStatus.innerHTML = 'You must have a field "url" in your content model to save the uploaded cloudinary url';
+                        } else {
+                            uploadStatus.innerHTML = 'Upload Failed';
+                        }
                     }
                 };
 
@@ -76,8 +80,6 @@
                 fd.append('file', file);
                 xhr.send(fd);
             }
-
-
         })
 
     </script>
