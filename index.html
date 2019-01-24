@@ -67,7 +67,7 @@
                     } else {
                         uploadStatus.style.color = 'red';
 
-                        if(extension.entry.fields.url) {
+                        if(!extension.entry.fields.url) {
                             uploadStatus.innerHTML = 'You must have a field "url" in your content model to save the uploaded cloudinary url';
                         } else {
                             uploadStatus.innerHTML = 'Upload Failed';
