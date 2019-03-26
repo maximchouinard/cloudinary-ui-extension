@@ -17,6 +17,12 @@
         "name": "Preset for Cloudinary",
         "type": "Symbol",
         "required": true
+      },
+      {
+        "id": "imageIdField",
+        "name": "Image ID field name",
+        "type": "Symbol",
+        "required": true
       }
     ]
   }
