@@ -69,7 +69,7 @@
                         uploadStatus.style.color = 'red';
 
                         if(!extension.entry.fields[imageIdFieldName]) {
-                            uploadStatus.innerHTML = 'You must have a field "+'imageIdFieldName'+" in your content model to save the uploaded Cloudinary image ID';
+                            uploadStatus.innerHTML = 'You must have a field "'+imageIdFieldName+'" in your content model to save the uploaded Cloudinary image ID';
                         } else {
                             uploadStatus.innerHTML = 'Upload Failed';
                         }
