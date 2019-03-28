@@ -2,6 +2,11 @@
 
 Uploader for images to [Cloudinary](https://cloudinary.com). 
 
+## What's new in 2.0?
+>Version 2.0 includes breaking changes.
+* Cloudinary UI extension returns image ID instead of image safe url field.
+* You must specify name of the field, that extension will save the image ID into.
+
 ## Installation and usage
 
 Check you have the [requirements](https://github.com/contentful/extensions/blob/master/samples/README.md#requirements) needed to use extensions.
