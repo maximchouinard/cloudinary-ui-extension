@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<form onsubmit="return false">
+<form>
     <button id='selectBtn' class="cf-btn-primary .cf-block">Select Files to Upload</button>
     <input id="fileElem" class="cf-form-input" type="file" accept="video/*, image/*, application/pdf"
            style='display:none'>
@@ -31,8 +31,9 @@
             handleFiles(fileElem.files)
         })
 
-        selectBtn.addEventListener("click", () => {
+        selectBtn.addEventListener("click", (event) => {
             fileElem.click()
+          	event.preventDefault()
         })
 
         function handleFiles(files) {
