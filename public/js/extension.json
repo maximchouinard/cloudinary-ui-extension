@@ -2,7 +2,7 @@
   "name": "Cloudinary Upload",
   "id": "contentful-ui-cloudinary",
   "fieldTypes": ["Object"],
-  "srcdoc": "./index.html",
+  "srcdoc": "/index.html",
   "sidebar": true,
   "parameters": {
     "instance": [
